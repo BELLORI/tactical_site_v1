@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>북한산 관측연구단</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		/* CSS 스타일을 이곳에 작성하세요 */
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			background-color: #333;
+			color: #fff;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 1rem;
+		}
+
+		h1 {
+			margin: 0;
+		}
+
+		nav ul {
+			display: flex;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		nav li {
+			margin-left: 1rem;
+		}
+
+		nav a {
+			color: #fff;
+			text-decoration: none;
+		}
+
+		main {
+			margin: 2rem;
+		}
+
+		h2 {
+			margin-top: 0;
+		}
+
+		form label {
+			display: inline-block;
+			width: 6rem;
+			margin-right: 1rem;
+			font-weight: bold;
+		}
+
+		form input,
+		form textarea {
+			padding: 0.5rem;
+			border: 1px solid #ccc;
+			border-radius: 0.25rem;
+			margin-bottom: 1rem;
+			display: block;
+			width: 100%;
+			max-width: 30rem;
+		}
+
+		form button {
+			background-color: #333;
+			color: #fff;
+			padding: 0.5rem 1rem;
+			border: none;
+			border-radius: 0.25rem;
+			cursor: pointer;
+		}
+
+		form button:hover {
+			background-color: #555;
+		}
+
+		footer {
+			background-color: #333;
+			color: #fff;
+			text-align: center;
+			padding: 1rem;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>북한산 관측연구단</h1>
+		<nav>
+			<ul>
+				<li><a href="#about">소개</a></li>
+				<li><a href="#join">가입신청</a></li>
+				<li><a href="#contact">연락처</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="about">
+			<h2>북한산 관측연구단</h2>
+			<p>북한산 관측연구단은 우매한 국민성을 높이고자 이 나라에 이바지하는 아주 우수한 인력으로 이루어져 있는 모임입니다.</p>
+		</section>
+		<section id="join">
+			<h2>가입신청 등록 폼</h2>
+			<form>
+				<label for="name">이름:</label>
+				<input type="text" id="name" name="name" required>
+				<label for="email">이메일:</label>
+				<input type="email" id="email" name="email" required>
+			<label for="phone">전화번호:</label>
+			<input type="tel" id="phone" name="phone" required>
+			<label for="message">메시지:</label>
+			<textarea id="message" name="message"></textarea>
+			<button type="submit">제출</button>
+		</form>
+	</section>
+	<section id="contact">
+		<h2>연락처</h2>
+		<p>북한산 관측연구단</p>
+		<p>서울시 강남구 역삼동 123-456</p>
+		<p>전화: 02-123-4567</p>
+		<p>이메일: info@hansarangmountaineering.com</p>
+	</section>
+</main>
+<footer>
+	<p>&copy; 2023 북한산 관측연구단. All rights reserved.</p>
+</footer>
+<script>
+	// JavaScript 코드를 이곳에 작성하세요
+	// 제출 버튼을 누르면 폼이 제출되도록 설정합니다
+	const form = document.querySelector('form');
+	form.addEventListener('submit', (event) => {
+		event.preventDefault();
+		alert('가입신청이 제출되었습니다.');
+	});
+</script>
